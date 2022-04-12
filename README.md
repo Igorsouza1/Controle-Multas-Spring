@@ -1,6 +1,6 @@
 # controleMultasJava
 
-##💻Tecnologias
+💻##Tecnologias
   - Spring Framework
   - JPA
   - Thymeleaf
@@ -10,5 +10,5 @@
   - Bootstrap
   - Maven
 
-##📋 Sobre
+📋##Sobre
 

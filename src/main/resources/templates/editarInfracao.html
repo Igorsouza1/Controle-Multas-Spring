@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Lista de Infracoes</title>
+	<link th:href="@{/webjars/bootstrap/4.5.3/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+
+<body>
+	<div class="card" style="margin: 10px">
+		<div class="card-header">
+			<h1 class="card-title">Lista de Infrações Cadastradas - Igor Souza</h1>
+		</div>
+		<div class="card-body">
+			<table class="table">
+				<thead>
+					<tr>
+						<form style="margin: 20px 0" method="POST" th:action="@{/infracoes}" th:object="${infracao}">
+							<div class="row">
+								<div class="col-auto">
+									<input class="form-control" type="hidden" th:field="*{id}" />
+									<input class="form-control" type="text" placeholder="Descricao" th:field="*{descricao}"/>
+									<input class="form-control" type="number" placeholder="Pontos" th:field="*{ponto}"/>
+									<input class="form-control" type="number" placeholder="Valor" th:field="*{valor}"/>
+								</div>
+
+								<div class="col-auto">
+									<button class="btn btn-primary" type="submit">Salvar</button>
+								</div>
+							</div>
+						</form>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Lista de Infracoes</title>
+	<link th:href="@{/webjars/bootstrap/4.5.3/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+
+<body>
+<div th:insert="~{Menu	::	menu}"></div>
+	<div class="card" style="margin: 10px">
+		<div class="card-header">
+			<h1 class="card-title">Lista de Infrações Cadastradas - IGOR SOUZA</h1>
+		</div>
+		<div class="card-body">
+			<form style="margin: 20px 0" method="POST" th:action="@{/infracoes}" th:object="${infracao}">
+				<div class="row">
+					<div class="col-auto">
+						<input class="form-control" type="text" placeholder="Descricao" th:field="*{descricao}" />
+					</div>
+					<div class="col-auto">
+						<input class="form-control" type="number" placeholder="Pontos" th:field="*{ponto}" />
+					</div>
+					<div class="col-auto">
+						<input class="form-control" type="number" placeholder="Valor" th:field="*{valor}" />
+					</div>
+
+					<div class="col-auto">
+						<button class="btn btn-primary" type="submit">Salvar</button>
+					</div>
+				</div>
+			</form>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Descricao</th>
+						<th>Pontos </th>
+						<th>Valor R$</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="c : ${infracoesBD}">
+						<td th:text="${c.id}"></td>
+						<td th:text="${c.descricao}"></td>
+						<td th:text="${c.ponto}"></td>
+						<td th:text="${c.valor}"></td>
+						<td><a class="btn btn-primary" th:href="@{infracao/editar/{id}(id=${c.id})}">Editar</a>
+						</td>
+						<td><a class="btn btn-danger" th:href="@{infracao/deletar/{id}(id=${c.id})}">Excluir</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>

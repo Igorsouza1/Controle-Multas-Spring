@@ -14,4 +14,4 @@
   Projeto feito como uma introdução ao Spring Framework com anotações básicas como @GetMapping e @PostMapping. A estrutura de pasta foi separada em Model, Service, Controller e Repository.
   O projeto cadastra edita e exclui multas,
   
-## Imagens do Projeto em Funcionamento
+## 🖥️Imagens do Projeto em Funcionamento

@@ -12,7 +12,12 @@
 
 ## 📋Sobre
   Projeto feito como uma introdução ao Spring Framework com anotações básicas como @GetMapping e @PostMapping. A estrutura de pasta foi separada em Model, Service, Controller e Repository.
-  O projeto cadastra edita e exclui multas,
+  
+  O projeto cadastra edita e exclui placas e Infrações.
+  
+## Modelo Utilizado
+![Capturar](https://user-images.githubusercontent.com/71149968/163076889-dd8ab498-9cfb-47c4-9639-1dfe1df42cd6.PNG)
+
   
 ## 🖥️Imagens do Projeto em Funcionamento
   ### Lista de Placas
@@ -29,4 +34,6 @@
  
   ### Lista de Multas
 ![ListadeMultas](https://user-images.githubusercontent.com/71149968/163076627-4987986c-feb6-48b0-b521-2efb0a9eac01.PNG)
+
+  A criação de Multas depende da Placa e da Infração, porem nao foi feito nenhuma validação nesses campos, assim caso nao sejam preenchidos geram erros.
 

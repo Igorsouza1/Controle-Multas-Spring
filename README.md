@@ -27,7 +27,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-* Você possui:`<Java 11 / Spring Framework>`
+* Você possui:`<Java 8+ / Spring Framework>`
 * Você tem uma máquina `<Windows / Linux / Mac>`.
 
 ## 🚀 Utilizando Controle de Multas

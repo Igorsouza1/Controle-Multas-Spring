@@ -38,9 +38,9 @@ Clone o projeto com o Git:
 ```
 Git clone https://github.com/Igorsouza1/controleMultasJava.git
 ```
-Abra com o Spring Framework
-E de um Start na aplicação
-
+- Abra com o Spring Framework
+- Baixe as depencias com o Maven
+- Start na aplicação
  
 ## Modelo Utilizado
 ![Capturar](https://user-images.githubusercontent.com/71149968/163076889-dd8ab498-9cfb-47c4-9639-1dfe1df42cd6.PNG)

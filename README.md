@@ -1,4 +1,4 @@
-# Sistema de Multas
+<div align="center"><h1>Sistema de Gestão de Multas</h1></div>
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)![BootsTrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![ListadeMultas](https://user-images.githubusercontent.com/71149968/163076627-4987986c-feb6-48b0-b521-2efb0a9eac01.PNG)
 
@@ -14,10 +14,10 @@
   - Maven
 
 ## 📋Sobre
-  Projeto feito como uma introdução ao Spring Framework com anotações básicas como @GetMapping e @PostMapping. Através do projeto e possivel cadastrar placas de carro, infrações e multas que dependem da Placa do Carro e da Infração, também é possivel edtar tanto a placa do carro quanto a infração.
+O projeto "Sistema de Gestão de Multas" foi desenvolvido como uma introdução ao Spring Framework, utilizando anotações básicas como @GetMapping e @PostMapping. A aplicação permite cadastrar placas de carros, infrações e multas, relacionando-os entre si. Além disso, oferece recursos para editar informações de placas e infrações.
  
-### Ajustes e melhorias
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+### Melhorias e ajustes em desenvolvimento
+O projeto encontra-se em constante evolução, e as próximas atualizações focarão nas seguintes tarefas:
 
 - [x] Separação de model Placa e Infração
 - [ ] Adicionar Edição para Multas
@@ -62,5 +62,17 @@ Git clone https://github.com/Igorsouza1/controleMultasJava.git
   ### Lista de Multas
 ![ListadeMultas](https://user-images.githubusercontent.com/71149968/163076627-4987986c-feb6-48b0-b521-2efb0a9eac01.PNG)
 
-  A criação de Multas depende da Placa e da Infração, porem nao foi feito nenhuma validação nesses campos, assim caso nao sejam preenchidos geram erros.
+ ## 📚 Documentação adicional e recursos
+- Spring Framework
+- Bootstrap
+- Thymeleaf
+- H2 Database
+- Maven
+- Java 8
+
+## 🤝 Contribuições
+Contribuições, problemas e solicitações de recursos são bem-vindos! Fique à vontade para verificar a página de issues do projeto.
+
+## 📝 Licença
+Este projeto está sob a licença MIT. Para mais informações, consulte o arquivo LICENSE disponível no repositório.
 
